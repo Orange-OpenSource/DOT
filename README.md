@@ -40,7 +40,7 @@
 
 4. **Tuning Configuration**
 
-   * Open your JSON config file (e.g., `configs/dot_config.json`).
+   * Open your JSON config file (e.g., `configs_example/dot_config.json`).
    * Define knobs and their ranges in the `knob_dict`:
 
      ```json
@@ -49,12 +49,14 @@
        ....
      }
      ```
-   * Choose tuning strategy:
+   * Choose tuning situation:
 
      * `"strategy": "basic = 1"` for plain Bayesian Optimization
      * `"strategy": "lrt = 1"` for DOT with Likelihood-Ratio Testing
      * `"strategy": "ts = 1"` for DOT with Thompson Sampling
      * `"strategy": "budget = XX"` for DOT with different benchmark budget
+     * `"with prior or not": "random = 1 or 0"` for a ordered knob list or not
+     
    * Set benchmarking budget, adaptation settings, and other parameters as needed.
 
 5. **Run DOT**
