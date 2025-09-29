@@ -1,0 +1,441 @@
+{
+    "remote_info": {
+        "host": "192.168.0.62",
+        "remote_user": "cloud",
+        "db_user": "dbbert",
+        "password": "dbbert",
+        "database": "tpch",
+        "port": 3306
+    },
+    "top_n": 4,
+    "ssh_key_path": "~/.ssh/key",
+    "is_incremental": 1,
+    "is_basic":0,
+    "is_low":1,
+    "is_random": 0,
+    "benchmark": "sysbench",
+    "local_log_dir": "../LOGS/incremental_sysbench.json",
+    "remote_mycnf_path": "/etc/mysql/my.cnf",
+    "knob_dict": {
+        "table_open_cache": [
+            "integer",
+            [
+                1,
+                10240,
+                4000
+            ]
+        ],
+        "innodb_buffer_pool_size": [
+            "integer",
+            [
+                1048576,
+                16106127360,
+                134217728
+            ]
+        ],
+        "innodb_buffer_pool_instances": [
+            "integer",
+            [
+                1,
+                64,
+                1
+            ]
+        ],
+        "innodb_purge_threads": [
+            "integer",
+            [
+                1,
+                32,
+                4
+            ]
+        ],
+        "innodb_read_io_threads": [
+            "integer",
+            [
+                1,
+                64,
+                4
+            ]
+        ],
+        "innodb_write_io_threads": [
+            "integer",
+            [
+                1,
+                64,
+                4
+            ]
+        ],
+        "innodb_read_ahead_threshold": [
+            "integer",
+            [
+                0,
+                64,
+                56
+            ]
+        ],
+        "innodb_sync_array_size": [
+            "integer",
+            [
+                1,
+                1024,
+                1
+            ]
+        ],
+        "innodb_sync_spin_loops": [
+            "integer",
+            [
+                0,
+                100,
+                30
+            ]
+        ],
+        "innodb_adaptive_hash_index": [
+            "boolean",
+            [
+                "ON",
+                "OFF",
+                "ON"
+            ]
+        ],
+        "tmp_table_size": [
+            "integer",
+            [
+                1024,
+                1073741824,
+                16777216
+            ]
+        ],
+        "innodb_random_read_ahead": [
+            "boolean",
+            [
+                "ON",
+                "OFF",
+                "OFF"
+            ]
+        ],
+        "table_open_cache_instances": [
+            "integer",
+            [
+                1,
+                64,
+                16
+            ]
+        ],
+        "thread_cache_size": [
+            "integer",
+            [
+                0,
+                1000,
+                9
+            ]
+        ],
+        "innodb_io_capacity": [
+            "integer",
+            [
+                100,
+                2000000,
+                200
+            ]
+        ],
+        "innodb_lru_scan_depth": [
+            "integer",
+            [
+                100,
+                10240,
+                1024
+            ]
+        ],
+        "innodb_spin_wait_delay": [
+            "integer",
+            [
+                0,
+                60,
+                6
+            ]
+        ],
+        "innodb_adaptive_hash_index_parts": [
+            "integer",
+            [
+                1,
+                512,
+                8
+            ]
+        ],
+        "innodb_page_cleaners": [
+            "integer",
+            [
+                1,
+                64,
+                1
+            ]
+        ],
+        "innodb_flush_neighbors": [
+            "integer",
+            [
+                0,
+                2,
+                0
+            ]
+        ],
+        "innodb_adaptive_flushing_lwm": [
+            "integer",
+            [
+                0,
+                70,
+                10
+            ]
+        ],
+        "innodb_adaptive_max_sleep_delay": [
+            "integer",
+            [
+                0,
+                1000000,
+                150000
+            ]
+        ],
+        "innodb_change_buffer_max_size": [
+            "integer",
+            [
+                0,
+                50,
+                25
+            ]
+        ],
+        "innodb_flush_log_at_timeout": [
+            "integer",
+            [
+                1,
+                2700,
+                1
+            ]
+        ],
+        "innodb_flushing_avg_loops": [
+            "integer",
+            [
+                1,
+                1000,
+                30
+            ]
+        ],
+        "innodb_max_purge_lag": [
+            "integer",
+            [
+                0,
+                4294967295,
+                0
+            ]
+        ],
+        "innodb_old_blocks_pct": [
+            "integer",
+            [
+                5,
+                95,
+                37
+            ]
+        ],
+        "innodb_replication_delay": [
+            "integer",
+            [
+                0,
+                10000,
+                0
+            ]
+        ],
+        "innodb_rollback_segments": [
+            "integer",
+            [
+                1,
+                128,
+                128
+            ]
+        ],
+        "lock_wait_timeout": [
+            "integer",
+            [
+                1,
+                31536000,
+                31536000
+            ]
+        ],
+        "innodb_adaptive_flushing": [
+            "boolean",
+            [
+                "OFF",
+                "ON",
+                "ON"
+            ]
+        ],
+        "innodb_autoextend_increment": [
+            "integer",
+            [
+                1,
+                1000,
+                64
+            ]
+        ],
+        "innodb_buffer_pool_dump_at_shutdown": [
+            "boolean",
+            [
+                "OFF",
+                "ON",
+                "ON"
+            ]
+        ],
+        "innodb_buffer_pool_load_at_startup": [
+            "boolean",
+            [
+                "OFF",
+                "ON",
+                "ON"
+            ]
+        ],
+        "innodb_concurrency_tickets": [
+            "integer",
+            [
+                1,
+                50000,
+                5000
+            ]
+        ],
+        "innodb_log_buffer_size": [
+            "integer",
+            [
+                262144,
+                4294967295,
+                16777216
+            ]
+        ],
+        "innodb_max_dirty_pages_pct": [
+            "integer",
+            [
+                0,
+                99,
+                90
+            ]
+        ],
+        "innodb_max_dirty_pages_pct_lwm": [
+            "integer",
+            [
+                0,
+                99,
+                10
+            ]
+        ],
+        "eq_range_index_dive_limit": [
+            "integer",
+            [
+                0,
+                2000,
+                200
+            ]
+        ],
+        "max_length_for_sort_data": [
+            "integer",
+            [
+                4,
+                10240,
+                4096
+            ]
+        ],
+        "read_rnd_buffer_size": [
+            "integer",
+            [
+                1,
+                5242880,
+                262144
+            ]
+        ],
+        "max_write_lock_count": [
+            "integer",
+            [
+                1,
+                18446744073709551615,
+                18446744073709551615
+            ]
+        ],
+        "query_alloc_block_size": [
+            "integer",
+            [
+                1024,
+                134217728,
+                8192
+            ]
+        ],
+        "transaction_prealloc_size": [
+            "integer",
+            [
+                1024,
+                131072,
+                4096
+            ]
+        ],
+        "join_buffer_size": [
+            "integer",
+            [
+                128,
+                26214400,
+                262144
+            ]
+        ],
+        "max_seeks_for_key": [
+            "integer",
+            [
+                1,
+                18446744073709551615,
+                18446744073709551615
+            ]
+        ],
+        "sort_buffer_size": [
+            "integer",
+            [
+                32768,
+                134217728,
+                262144
+            ]
+        ],
+        "innodb_old_blocks_time": [
+            "integer",
+            [
+                0,
+                10000,
+                1000
+            ]
+        ],
+        "innodb_purge_batch_size": [
+            "integer",
+            [
+                1,
+                5000,
+                300
+            ]
+        ],
+        "innodb_commit_concurrency": [
+            "integer",
+            [
+                0,
+                1000,
+                0
+            ]
+        ],
+        "innodb_thread_sleep_delay": [
+            "integer",
+            [
+                0,
+                1000000,
+                10000
+            ]
+        ],
+        "back_log": [
+            "integer",
+            [
+                1,
+                65535,
+                151
+            ]
+        ]
+    },
+    "bayes_opt_settings": {
+        "n_calls": 410,
+        "random_state": 1
+    }
+}

@@ -1,0 +1,11 @@
+/*
+ * Software Name : DOT
+ * SPDX-FileCopyrightText: Copyright (c) Orange SA
+ * SPDX-License-Identifier: MIT
+ *
+ * This software is distributed under the MIT,
+ * see the "LICENSE.txt" file for more details or https://opensource.org/license/mit/
+ *
+ * Authors: see CONTRIBUTORS.md
+ * Software description: DOT is ....
+ */
