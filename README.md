@@ -20,6 +20,7 @@
 1. **Configure Benchmark**
 
    * Place your benchmark scripts in the `scripts/` folder.
+   * Execute database load script to create corresponding database
    * Adjust the access patterns and workload parameters in `exp_config.json`.
 
 2. **Custom Benchmarks (Optional)**
